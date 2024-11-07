@@ -43,6 +43,6 @@ transformed_image.show()
 
 To generate a random monotone function, we start by using an orthogonal basis from the space of continuous functions on the interval $[0, 1]$. Specifically, we use the Chebyshev polynomials.
 
-We create a truncated series expansion with basis coefficients sampled from a normal distribution $ N(\mu=0, \sigma=(n+1)^{\frac{7}{8}}) $ for the $n$-th coefficient. The series is adjusted by subtracting its minimum value, and then integrated from $0$ to $x$. This integral is subsequently normalized by its value at 1, ensuring the resulting function $f: [0, 1] \rightarrow [0, 1]$ satisfies $f(0) = 0$ and $f(1) = 1$.
+We create a truncated series expansion with basis coefficients sampled from a normal distribution $N(\mu=0, \sigma=(n+1)^{-\frac{7}{8}})$ for the $n$-th coefficient. The series is adjusted by subtracting its minimum value, and then integrated from $0$ to $x$. This integral is subsequently normalized by its value at 1, ensuring the resulting function $f: [0, 1] \rightarrow [0, 1]$ satisfies $f(0) = 0$ and $f(1) = 1$.
 
 This process produces a random monotone function that can be applied to transform the intensity values of the RGB channels, preserving the order and continuity of the original pixel data.
