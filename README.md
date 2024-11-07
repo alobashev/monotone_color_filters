@@ -6,6 +6,16 @@ This library enables the application of random monotone transformations to the c
 - Generates a random monotone function for each of the red, green, and blue channels.
 - Applies the generated functions independently to the RGB channels of an image.
 
+### Comparison with pytorch color jitter
+
+Monotone color filters (ours):
+![image](random_color_filters_1.png)
+![image](random_color_filters_2.png)
+
+Pytorch color jitter (torchvision.transforms.ColorJitter):
+![image](random_color_jitter_1.png)
+![image](random_color_jitter_2.png)
+
 ### Quickstart
 
 After cloning the repository install the library using
